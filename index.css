@@ -1,0 +1,18 @@
+body {background-color: rgb(226, 226, 240);}
+
+a {background-color: rgb(214, 246, 171);}
+
+p {
+    color: blue;
+    size: 34em;
+}
+
+span {
+    color:green;
+}
+
+#red {
+    color: red;
+}
+
+
