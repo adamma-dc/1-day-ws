@@ -4,57 +4,66 @@
 //querySelector('p')
 
 //this gets ahold of the p tag
+
 function change()
 { 
   document.
   querySelector('p').
   style =
-  'font-family: "Helvetica";font-style: italic'
+  'font-family: "Helvetica";font-style: italic;'
 }
 //*callback*
 
 //tells it to execute set of instructions automagically ()= do this code,, run this funtion recipe
-change()
+
 
 //define function, written receipe but haven't cooked anthing 
-function sayHello() {
-  console.log("Hello")
+function SayHello() 
+{
+console.log("Hello")
 }
 
+  function ChangeBackground() 
+  {
+    document.querySelector('body')
+    .style = 'background-color: gray'
+  }
 //run function 
-sayHello()
 //console logged hello <- to print 
 // no (), you want to "call" and say Hello
 
+// What follows is calling/invoking/running the function named "change"
 document.querySelector('img')
-.addEventListener('click', 
-change)
+.addEventListener('click', change)
 
 //when the mouse goes over the image
 document.querySelector('img')
 .addEventListener('mouseenter',
-  changeBackground)
+  ChangeBackground)
 
 //change the color background 
-  document.querySelector('body')
-  .style = 'background-color:blue'
+  document.querySelector('img')
+  .addEventListener('mouseleave', ResetBackground) 
 
-  function changeBackground() {
-    document.querySelector('img')
-    .style = 'background-color: gray'
-  }
+
 
 
   //change the background back
-  function resetBackground() 
+  function ResetBackground() 
   {
-    document.querySelector('img')
+    document.querySelector('body')
     .style = 'background-color: default'
   }
   //when the mouse leaves the image 
 
+  document.querySelector('img')
+  .addEventListner('click', change)
+
+
+
+
   document.query.Selector('img')
-  .addEventListener('mouseleave', ChangeBackground)
+  .addEventListener('mouseenter', ChangeBackground)
 
   document.query.Selector('img')
   .addEventListener('mouseleave', ResetBackground)
@@ -105,17 +114,6 @@ console.log('did a loop')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ////////////////////////////////
 //    Afternoon               //
 ////////////////////////////////
@@ -134,5 +132,3 @@ console.log('did a loop')
 // conditions
 
 // loops
-
-
